@@ -6,9 +6,9 @@
 
 提示一
 
-[start_linux](bin/start_linux)
+[start_linux](bin/start_linux.zip)
 
-[start_macOS](bin/start_macOS)
+[start_macOS](bin/start_macOS.zip)
 
 提示二
 
