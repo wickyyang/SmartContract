@@ -113,9 +113,9 @@
 		"name": "getAllAddr",
 		"outputs": [
 			{
-				"internalType": "address[30]",
+				"internalType": "address[100]",
 				"name": "",
-				"type": "address[30]"
+				"type": "address[100]"
 			}
 		],
 		"payable": false,

@@ -11,8 +11,8 @@ contract Competitor {
     address private _admin;
     // 正答总人数
     uint256 private _competitorNum;
-    // 前30名账户地址
-    address[30] _competitorAddr;
+    // 前100名账户地址
+    address[100] _competitorAddr;
     
     // 正答者信息
     struct CompetitorInfo {
@@ -53,7 +53,7 @@ contract Competitor {
         
         CompetitorRankIndex[_competitorNum] = _mail;
         
-        if (_competitorNum <= 30) {
+        if (_competitorNum <= 100) {
             _competitorAddr[_competitorNum - 1] = msg.sender;
         }
     }
@@ -84,8 +84,8 @@ contract Competitor {
         return CompetitorRankIndex[_num];
     }
     
-    // 前30位正答者账户地址
-    function getAllAddr() public view onlyAdmin returns (address[30] memory) {
+    // 前100位正答者账户地址
+    function getAllAddr() public view onlyAdmin returns (address[100] memory) {
         return _competitorAddr;
     }
     

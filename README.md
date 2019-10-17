@@ -20,8 +20,9 @@
 
 可以使用go sdk 或者 command tool来执行和查询合约
 
-|          | Go SDK                                                       | Command Tool                                                 |
-| -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 获取链接 | [请点击](https://github.com/dappledger/ann-go-sdk)           | [请点击](https://github.com/dappledger/AnnChain/releases/tag/v1.4.0) |
-| 使用方式 | [请点击](https://github.com/dappledger/ann-go-sdk/blob/master/example/za_test.go) | [执行合约](https://github.com/dappledger/AnnChain/blob/master/docs/cmd.md#execute-contract)、[查询合约](https://github.com/dappledger/AnnChain/blob/master/docs/cmd.md#read-contract) |
-| 所需参数 |                                                              | [请点击](doc/tool.md)                                        |
+|          | Command Tool                                                 | Go SDK                                                       | JAVA SDK |
+| -------- | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |
+| 获取链接 | [请点击](https://github.com/dappledger/AnnChain/releases/tag/v1.4.0) | [请点击](https://github.com/dappledger/ann-go-sdk)           |          |
+| 使用方式 | [执行合约](https://github.com/dappledger/AnnChain/blob/master/docs/cmd.md#execute-contract)、[查询合约](https://github.com/dappledger/AnnChain/blob/master/docs/cmd.md#read-contract) | [执行合约](https://github.com/dappledger/ann-go-sdk/blob/master/example/za_test.go#L148)、[查询合约](https://github.com/dappledger/ann-go-sdk/blob/master/example/za_test.go#L169) |          |
+| 所需参数 | [请点击](doc/tool.md)                                        | 参考Command Tool                                             |          |
+
