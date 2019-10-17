@@ -135,7 +135,7 @@
 
 ```
 {
-  "contract" : "题目所得",		
+  "contract" : "关卡一所得",		
   "function" : "addCompetitorInfo",															
   "params":[																									
     "姓名", "企业邮箱"
@@ -147,7 +147,7 @@
 
 ```
 {
-  "contract" : "题目所得",	
+  "contract" : "关卡一所得",	
   "function" : "getCompetitorResult",															
   "params":[																									
     "企业邮箱"
