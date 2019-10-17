@@ -1,4 +1,4 @@
-# Command Tool 所需参数
+# Command Tool 调用合约所需参数
 
 - sample.abi
 
