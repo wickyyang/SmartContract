@@ -5,20 +5,40 @@
 ```
 [
 	{
-		"constant": true,
+		"constant": false,
 		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_name",
+				"type": "string"
+			},
 			{
 				"internalType": "string",
 				"name": "_mail",
 				"type": "string"
 			}
 		],
-		"name": "getCompetitorResult",
+		"name": "addCompetitorInfo",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getAllAddr",
 		"outputs": [
 			{
-				"internalType": "string",
+				"internalType": "address[100]",
 				"name": "",
-				"type": "string"
+				"type": "address[100]"
 			}
 		],
 		"payable": false,
@@ -88,45 +108,25 @@
 		"type": "function"
 	},
 	{
-		"constant": false,
+		"constant": true,
 		"inputs": [
-			{
-				"internalType": "string",
-				"name": "_name",
-				"type": "string"
-			},
 			{
 				"internalType": "string",
 				"name": "_mail",
 				"type": "string"
 			}
 		],
-		"name": "addCompetitorInfo",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [],
-		"name": "getAllAddr",
+		"name": "getCompetitorResult",
 		"outputs": [
 			{
-				"internalType": "address[100]",
+				"internalType": "string",
 				"name": "",
-				"type": "address[100]"
+				"type": "string"
 			}
 		],
 		"payable": false,
 		"stateMutability": "view",
 		"type": "function"
-	},
-	{
-		"inputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "constructor"
 	}
 ]
 ```
