@@ -6,9 +6,9 @@
 
 - ##### 关卡一
 
-[start_linux.zip](bin/start_linux.zip)
+[start_linux.zip](https://github.com/dappledger/AnnChain/releases/download/v1.4.0/start_linux.zip)
 
-[start_macOS.zip](bin/start_macOS.zip)
+[start_macOS.zip](https://github.com/dappledger/AnnChain/releases/download/v1.4.0/start_macOS.zip)
 
 - ##### 关卡二
 
