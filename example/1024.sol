@@ -60,7 +60,7 @@ contract Competitor {
     
     // 查询参赛者信息登记情况
     function getCompetitorResult(string memory _mail) public view returns(string memory) {
-        string memory result = "信息登记成功，节日快乐!第三题题目请看http://annchain.gq:30077";
+        string memory result = "信息登记成功!第三题题目请看http://annchain.gq:30077";
         
         if (CompetitorInfoIndex[_mail].rank == 0) {
             result = "信息不存在!";
