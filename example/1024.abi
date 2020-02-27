@@ -84,7 +84,23 @@
 		"outputs": [
 			{
 				"name": "",
+				"type": "uint256"
+			},
+			{
+				"name": "",
 				"type": "string"
+			},
+			{
+				"name": "",
+				"type": "string"
+			},
+			{
+				"name": "",
+				"type": "address"
+			},
+			{
+				"name": "",
+				"type": "uint256"
 			}
 		],
 		"payable": false,
