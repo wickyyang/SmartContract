@@ -3,12 +3,10 @@
 		"constant": false,
 		"inputs": [
 			{
-				"internalType": "string",
 				"name": "_name",
 				"type": "string"
 			},
 			{
-				"internalType": "string",
 				"name": "_mail",
 				"type": "string"
 			}
@@ -31,7 +29,6 @@
 		"name": "getAllAddr",
 		"outputs": [
 			{
-				"internalType": "address[100]",
 				"name": "",
 				"type": "address[100]"
 			}
@@ -44,7 +41,6 @@
 		"constant": true,
 		"inputs": [
 			{
-				"internalType": "string",
 				"name": "_mail",
 				"type": "string"
 			}
@@ -52,27 +48,22 @@
 		"name": "getCompetitorInfo",
 		"outputs": [
 			{
-				"internalType": "uint256",
 				"name": "",
 				"type": "uint256"
 			},
 			{
-				"internalType": "string",
 				"name": "",
 				"type": "string"
 			},
 			{
-				"internalType": "address",
 				"name": "",
 				"type": "address"
 			},
 			{
-				"internalType": "string",
 				"name": "",
 				"type": "string"
 			},
 			{
-				"internalType": "uint256",
 				"name": "",
 				"type": "uint256"
 			}
@@ -85,7 +76,6 @@
 		"constant": true,
 		"inputs": [
 			{
-				"internalType": "uint256",
 				"name": "_num",
 				"type": "uint256"
 			}
@@ -93,7 +83,6 @@
 		"name": "getCompetitorMail",
 		"outputs": [
 			{
-				"internalType": "string",
 				"name": "",
 				"type": "string"
 			}
@@ -106,7 +95,6 @@
 		"constant": true,
 		"inputs": [
 			{
-				"internalType": "string",
 				"name": "_mail",
 				"type": "string"
 			}
@@ -114,7 +102,6 @@
 		"name": "getCompetitorResult",
 		"outputs": [
 			{
-				"internalType": "string",
 				"name": "",
 				"type": "string"
 			}
