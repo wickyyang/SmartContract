@@ -70,14 +70,14 @@ contract Competitor {
     }
     
     // 通过邮箱获取正答者信息
-    function getCompetitorInfo(string memory _mail) public view onlyAdmin returns (uint256, string memory, address, string memory, uint256) {
+    function getCompetitorInfoFromMail(string memory _mail) public view onlyAdmin returns (uint256, string memory, address, string memory, uint256) {
         require( CompetitorInfoIndex[_mail].rank != 0 );
         
         return( CompetitorInfoIndex[_mail].rank, CompetitorInfoIndex[_mail].name, CompetitorInfoIndex[_mail].addr, CompetitorInfoIndex[_mail].mail, CompetitorInfoIndex[_mail].time);
     }
     
     // 通过排名获取正答者信息
-    function getCompetitorMail(uint256 _num) public view onlyAdmin returns (uint256, string memory, string memory, address, uint256) {
+    function getCompetitorInfoFromRank(uint256 _num) public view onlyAdmin returns (uint256, string memory, string memory, address, uint256) {
         require( _num > 0 && _num <= _competitorNum );
         
         string memory mail = CompetitorRankIndex[_num];
