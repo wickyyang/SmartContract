@@ -76,11 +76,12 @@ contract Competitor {
         return( CompetitorInfoIndex[_mail].rank, CompetitorInfoIndex[_mail].name, CompetitorInfoIndex[_mail].addr, CompetitorInfoIndex[_mail].mail, CompetitorInfoIndex[_mail].time);
     }
     
-    // 通过排名获取正答者邮箱
-    function getCompetitorMail(uint256 _num) public view onlyAdmin returns (string memory) {
+    // 通过排名获取正答者信息
+    function getCompetitorMail(uint256 _num) public view onlyAdmin returns (uint256, string memory, string memory, address, uint256) {
         require( _num > 0 && _num <= _competitorNum );
         
-        return CompetitorRankIndex[_num];
+        string memory mail = CompetitorRankIndex[_num];
+        return (CompetitorInfoIndex[mail].rank, mail, CompetitorInfoIndex[mail].name, CompetitorInfoIndex[mail].addr, CompetitorInfoIndex[mail].time);
     }
     
     // 前100位正答者账户地址
