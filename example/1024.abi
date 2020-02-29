@@ -1,52 +1,36 @@
 [
 	{
-		"constant": true,
+		"constant": false,
 		"inputs": [
 			{
-				"name": "_num",
-				"type": "uint256"
-			}
-		],
-		"name": "getCompetitorInfoFromRank",
-		"outputs": [
-			{
-				"name": "",
-				"type": "uint256"
-			},
-			{
-				"name": "",
+				"name": "_name",
 				"type": "string"
 			},
-			{
-				"name": "",
-				"type": "string"
-			},
-			{
-				"name": "",
-				"type": "address"
-			},
-			{
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [
 			{
 				"name": "_mail",
 				"type": "string"
 			}
 		],
-		"name": "getCompetitorResult",
+		"name": "addCompetitorInfo",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getAllAddr",
 		"outputs": [
 			{
 				"name": "",
-				"type": "string"
+				"type": "address[100]"
 			}
 		],
 		"payable": false,
@@ -89,31 +73,34 @@
 		"type": "function"
 	},
 	{
-		"constant": false,
+		"constant": true,
 		"inputs": [
 			{
-				"name": "_name",
-				"type": "string"
-			},
-			{
-				"name": "_mail",
-				"type": "string"
+				"name": "_num",
+				"type": "uint256"
 			}
 		],
-		"name": "addCompetitorInfo",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [],
-		"name": "getAllAddr",
+		"name": "getCompetitorInfoFromRank",
 		"outputs": [
 			{
 				"name": "",
-				"type": "address[100]"
+				"type": "uint256"
+			},
+			{
+				"name": "",
+				"type": "string"
+			},
+			{
+				"name": "",
+				"type": "address"
+			},
+			{
+				"name": "",
+				"type": "string"
+			},
+			{
+				"name": "",
+				"type": "uint256"
 			}
 		],
 		"payable": false,
@@ -121,9 +108,22 @@
 		"type": "function"
 	},
 	{
-		"inputs": [],
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_mail",
+				"type": "string"
+			}
+		],
+		"name": "getCompetitorResult",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
 		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "constructor"
+		"stateMutability": "view",
+		"type": "function"
 	}
 ]
