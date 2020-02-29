@@ -35,7 +35,9 @@ contract Competitor {
     }
     
     modifier onlyAdmin {
-        require (msg.sender == _admin);
+        if (msg.sender != _admin) {
+            return;
+        }
         _;
     }
     
@@ -71,17 +73,13 @@ contract Competitor {
     
     // 通过邮箱获取正答者信息
     function getCompetitorInfoFromMail(string memory _mail) public view onlyAdmin returns (uint256, string memory, address, string memory, uint256) {
-        require( CompetitorInfoIndex[_mail].rank != 0 );
-        
         return( CompetitorInfoIndex[_mail].rank, CompetitorInfoIndex[_mail].name, CompetitorInfoIndex[_mail].addr, CompetitorInfoIndex[_mail].mail, CompetitorInfoIndex[_mail].time);
     }
     
     // 通过排名获取正答者信息
-    function getCompetitorInfoFromRank(uint256 _num) public view onlyAdmin returns (uint256, string memory, string memory, address, uint256) {
-        require( _num > 0 && _num <= _competitorNum );
-        
+    function getCompetitorInfoFromRank(uint256 _num) public view onlyAdmin returns (uint256, string memory, address, string memory, uint256) {
         string memory mail = CompetitorRankIndex[_num];
-        return (CompetitorInfoIndex[mail].rank, mail, CompetitorInfoIndex[mail].name, CompetitorInfoIndex[mail].addr, CompetitorInfoIndex[mail].time);
+        return (CompetitorInfoIndex[mail].rank, CompetitorInfoIndex[mail].name, CompetitorInfoIndex[mail].addr, mail, CompetitorInfoIndex[mail].time);
     }
     
     // 前100位正答者账户地址
